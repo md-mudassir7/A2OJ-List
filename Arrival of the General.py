@@ -1,0 +1,5 @@
+n=int(input())
+l=list(map(int,input().split()))
+t1=l.index(max(l))
+t2=l[::-1].index(min(l))
+print(t1+t2-((t1+t2)>=n))
